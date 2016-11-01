@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+      always include schema in animation XML
+      In this animation we execute two object animators sequentially.
+        First object animator moves X co-ordinates
+            1. Duration as 500 milli seconds
+            2. Ending Value as 400
+            3. Property as X (rotating along X- axis. Refer to setX() method for image view)
+            4. Data type of the property is float)
+        Second animator moves Y co-ordinates
+            1. Duration as 500 milli seconds
+            2. Ending Value as 500
+            3. Property as Y (rotating along X- axis. Refer to setY() method for image view)
+            4. Data type of the property is float)
+
+-->
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+    android:ordering="sequentially">
+    <set>
+        <objectAnimator
+            android:propertyName="x"
+            android:duration="500"
+            android:valueTo="400"
+            android:valueType="floatType"/>
+        <objectAnimator
+            android:propertyName="y"
+            android:duration="500"
+            android:valueTo="300"
+            android:valueType="floatType"/>
+    </set>
+</set>

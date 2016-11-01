@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+      always include schema in animation XML
+      In this animation we set
+        1. Duration as 500 milli seconds
+        2. Starting Value as 0
+        3. Ending Value as 360
+        4. Property as rotationX (rotating along Y- axis. Refer to serRotationY() method for image view)
+        5. Data type of the property is float)
+-->
+<objectAnimator
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:duration="500"
+    android:propertyName="rotationY"
+    android:valueFrom="0"
+    android:valueTo="360"
+    android:valueType="floatType"/>
+
